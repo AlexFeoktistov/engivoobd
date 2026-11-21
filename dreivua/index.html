@@ -164,6 +164,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 28px;justify-content:space-bet
 footer nav{display:flex;gap:22px;flex-wrap:wrap}
 footer a:hover{color:var(--text)}
 .ua{display:inline-block;width:18px;height:12px;border-radius:2px;background:linear-gradient(#2a63d6 50%,#f5c84c 50%);vertical-align:-1px;margin-left:6px}
+
+.andr{border-radius:32px;padding:56px;background:radial-gradient(circle at 15% 0,#19b37a2e,transparent 50%),linear-gradient(135deg,#10233d,#0b1626);border:1px solid var(--line)}
+.ksteps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px auto 0}
+.kstep ul,.help ul{list-style:none;display:grid;gap:8px;margin-bottom:20px;color:var(--muted);font-size:15px}
+.kstep li{position:relative;padding-left:16px}.kstep li:before{content:'';position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--green)}
+.kstep em,.help em{font-style:normal;color:var(--text);font-weight:600}
+.help{max-width:860px;margin:28px auto 0;padding:22px 26px;border-radius:20px;background:#f5c84c12;border:1px solid #f5c84c40}
+.help b{display:block;color:var(--yellow);margin-bottom:10px}.help ul{margin:0}.help strong{color:var(--text)}
+.kstep{position:relative;display:block;padding:30px 28px;border-radius:24px;background:#ffffff0a;border:1px solid #ffffff1f;transition:transform .15s,border-color .15s,background .15s}
+.kstep:hover{transform:translateY(-3px);border-color:#19b37a99;background:#19b37a14}
+.kstep .n{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--green);font-family:var(--fh);font-weight:800;font-size:20px;margin-bottom:16px}
+.kstep b{display:block;font-family:var(--fh);font-size:20px;margin-bottom:8px}
+.kstep p{color:var(--muted);font-size:15px;margin-bottom:18px}
+.kstep .go{display:inline-block;padding:11px 18px;border-radius:999px;background:var(--green);color:#04150e;font-weight:700;font-size:15px}
+.note{text-align:center;color:var(--yellow);font-size:15px;margin-top:24px}
+@media(max-width:900px){.andr{padding:32px 20px}.ksteps{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -341,6 +357,58 @@ footer a:hover{color:var(--text)}
   </div>
 </section>
 
+<section id="android" style="padding-top:30px">
+  <div class="wrap">
+    <div class="andr">
+      <div class="center">
+        <div class="eyebrow">Android</div>
+        <h2>Встановіть DreivUA на Android</h2>
+        <p class="lead">Застосунок зараз у тестуванні в Google Play. Кілька хвилин — і він у вас на телефоні. Просто пройдіть кроки по черзі.</p>
+      </div>
+      <div class="ksteps">
+        <a class="kstep" href="https://groups.google.com/g/dreivua-testers" target="_blank" rel="noopener">
+          <span class="n">1</span>
+          <b>Приєднайтеся до групи</b>
+          <ul>
+            <li>Натисніть кнопку нижче — відкриється сторінка «DreivUA» у Google Групах.</li>
+            <li>Увійдіть у свій Google-акаунт, якщо попросить.</li>
+            <li>Натисніть <em>«Приєднатися до групи»</em> → <em>«Приєднатися»</em>.</li>
+          </ul>
+          <span class="go">Відкрити групу →</span>
+        </a>
+        <a class="kstep" href="https://play.google.com/apps/testing/com.dreivua" target="_blank" rel="noopener">
+          <span class="n">2</span>
+          <b>Станьте тестувальником</b>
+          <ul>
+            <li>Натисніть кнопку нижче — відкриється сторінка тестування Google Play.</li>
+            <li>Натисніть <em>«Стати тестувальником»</em>.</li>
+            <li>Натисніть <em>«Завантажити з Google Play»</em> → <em>«Встановити»</em>.</li>
+          </ul>
+          <span class="go">Стати тестувальником →</span>
+        </a>
+        <div class="kstep">
+          <span class="n">3</span>
+          <b>Користуйтеся й пишіть нам</b>
+          <ul>
+            <li>Відкрийте DreivUA і дозвольте доступ до геолокації.</li>
+            <li>Будь ласка, не видаляйте застосунок і не виходьте з групи 14 днів.</li>
+            <li>Відгуки й помилки — у чат: <em>Налаштування → Підтримка</em>.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="help">
+        <b>Щось не виходить?</b>
+        <ul>
+          <li><strong>«Застосунок недоступний» / «Не знайдено»</strong> — ви ще не в групі або увійшли іншим акаунтом. Перевірте, що в групі й у Play Маркеті один і той самий Google-акаунт.</li>
+          <li><strong>Кнопки «Встановити» немає</strong> — після вступу в групу зачекайте 5–10 хвилин і відкрийте посилання з кроку 2 ще раз.</li>
+          <li><strong>Кілька акаунтів на телефоні</strong> — у Play Маркеті натисніть на аватарку й перемкніться на той, яким вступали в групу.</li>
+        </ul>
+      </div>
+      <p class="note">Важливо: в обох кроках використовуйте той самий Google-акаунт, що й у Play Маркеті на телефоні.</p>
+    </div>
+  </div>
+</section>
+
 <section id="faq">
   <div class="wrap">
     <div class="center"><div class="eyebrow">Питання</div><h2>Часті запитання</h2></div>
@@ -350,7 +418,7 @@ footer a:hover{color:var(--text)}
       <details><summary>Чи працює без інтернету?</summary><p>Так. Завантажте карту міста або області заздалегідь — і навігація, камери й лежачі поліцейські працюватимуть офлайн. Для прокладання нового маршруту інтернет бажаний.</p></details>
       <details><summary>Чи збираєте ви мої маршрути?</summary><p>Ні. Координати, маршрути й записані поїздки лишаються лише на вашому телефоні. На сервер іде тільки знеособлена технічна статистика й звіти про помилки. Детальніше — у <a href="privacy.html" style="color:#7fb0ff">Політиці конфіденційності</a>.</p></details>
       <details><summary>Як скасувати підписку?</summary><p>iPhone: Налаштування → ваше ім'я → Підписки → DreivUA. Android: Play Маркет → профіль → Платежі та підписки → Підписки. Доступ лишається до кінця оплаченого періоду.</p></details>
-      <details id="android"><summary>Як встановити на Android?</summary><p>DreivUA для Android зараз у закритому тестуванні. 1) Приєднайтеся до групи тестувальників: <a href="https://groups.google.com/g/dreivua-testers" target="_blank" rel="noopener" style="color:#7fb0ff">groups.google.com/g/dreivua-testers</a>. 2) Відкрийте <a href="https://play.google.com/apps/testing/com.dreivua" target="_blank" rel="noopener" style="color:#7fb0ff">сторінку тестування</a> → «Стати тестувальником» → встановіть з Google Play. Використовуйте той самий Google-акаунт, що й у Play Маркеті.</p></details>
+      <details open><summary>Як встановити на Android?</summary><p>DreivUA для Android зараз у закритому тестуванні. 1) Приєднайтеся до групи тестувальників: <a href="https://groups.google.com/g/dreivua-testers" target="_blank" rel="noopener" style="color:#7fb0ff">groups.google.com/g/dreivua-testers</a>. 2) Відкрийте <a href="https://play.google.com/apps/testing/com.dreivua" target="_blank" rel="noopener" style="color:#7fb0ff">сторінку тестування</a> → «Стати тестувальником» → встановіть з Google Play. Використовуйте той самий Google-акаунт, що й у Play Маркеті.</p></details>
     </div>
   </div>
 </section>
